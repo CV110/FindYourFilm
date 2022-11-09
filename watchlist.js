@@ -53,7 +53,7 @@ function renderMovies(idArray) {
             })
     }
 }
-if(localStorage.getItem("moviesArray")) {
+if(watchlistMovies.length) {
     emptyMessage.style.display = "none"
     watchlist.style.display = "block"
     renderMovies(JSON.parse(localStorage.getItem("moviesArray")))
